@@ -93,7 +93,6 @@ function main()
 	win = false
 
 	while isopen(window)
-		sleep(0)
 		while pollevent(window, event)
 			if get_type(event) == EventType.CLOSED
 				close(window)
