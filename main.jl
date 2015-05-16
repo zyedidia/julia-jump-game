@@ -1,5 +1,5 @@
-using AnimatedPlots
 importall SFML
+
 const mode = get_desktop_mode()
 
 const window_width = Int(mode.width)
@@ -92,7 +92,6 @@ function main()
 
 	win = false
 
-	make_gif(window, 600, 450, 15, "Doodle-jump.gif", 0.04)
 	while isopen(window)
 		sleep(0)
 		while pollevent(window, event)
@@ -136,7 +135,6 @@ function main()
 		draw(window, score)
 
 		display(window)
-
 	end
 end
 
